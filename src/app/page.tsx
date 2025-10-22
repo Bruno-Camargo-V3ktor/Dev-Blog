@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import { Container } from "@/components/Container";
 import { Header } from "@/components/Header";
+import { PostHeading } from "@/components/PostHeading";
 import { PostList } from "@/components/PostList";
 import { SpinLoader } from "@/components/SpinLoader";
 import Link from "next/link";
@@ -25,9 +26,9 @@ export default async function HomePage() {
         <div className='flex flex-col gap-2 sm:justify-center'>
           <time className='text-slate-600 text-sm/tight mb-4 block' dateTime='2025-04-20'>20/04/2025 10:00</time>
 
-          <h1 className='text-2xl/tight mb-4 font-extrabold sm:text-4xl'>
-            <Link href='#'>Lorem ipsum, dolor sit amet consectetur</Link>
-          </h1>
+          <PostHeading as='h1' url='#'>
+            Lorem ipsum, dolor sit amet consectetur
+          </PostHeading>
 
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus eveniet,
